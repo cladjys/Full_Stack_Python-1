@@ -1,0 +1,61 @@
+/* selector universal */
+/* formateo de los elementos */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+}
+
+/* small */
+.rosado {background-color: pink; height: 200px;}
+
+.verde {background: green; height: 400px;}
+
+.azul {background: blue; height: 100px;}
+
+.gris{background-color: gray; height: 500px;}
+
+/* medium */
+@media (min-width: 501px) and (max-width: 750px) {
+    .verde{
+        height: 200;
+    }
+
+    .rosado{
+        height: 200px;
+    }
+    
+
+    .azul{
+        height: 100px;
+    }
+
+    .gris{
+        height: 500px;
+    }
+}
+
+/* large */
+@media (min-width: 751px) {
+    .rosado{
+        height: 200px;
+    }
+
+
+    .verde{
+        
+        height: 400px;
+       
+    }
+
+    .azul{
+        height: 100px;
+        
+    }
+
+    }
+
+   

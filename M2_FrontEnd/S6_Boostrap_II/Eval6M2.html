@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <!-- bootstrap css -->
+    <!-- 
+    Configura el proyecto de manera adecuada para utilizar Bootstrap ya sea por CDN o descarga.
+    -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <!-- 
+    Utilizando Bootstrap debes colocar un navbar con el nombre de la empresa SKYP y las opciones “Planifica tu Viaje”, “Administra tu vuelo”, “Check-In” y “Centro de Ayuda”.
+    https://getbootstrap.com/docs/5.3/components/navbar/#nav
+    
+    El color del navbar lo encontrarás en Bootstrap.
+    https://getbootstrap.com/docs/5.3/components/navbar/#color-schemes
+    -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">AeroVia Express</a>
+          <div class="navbar-expand" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link dropdown-toggle" aria-current="page" href="#">Ofertas y destinos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link dropdown-toggle" href="#">Mis viajes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Centro de ayuda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Estado de vuelo</a>
+              </li>
+            </ul>
+           </div>
+        <button class="btn btn-primary" style="background-color: #404f6b;border-radius:20px;">Iniciar sesión</button>
+      </div>
+    </nav>
+
+    <!-- carta horizontal https://getbootstrap.com/docs/5.3/components/card/#horizontal-->
+      <div class="card mb-3 bg-info">
+        <div class="row g-0">
+          <div class="col-md-8">
+            <div class="card-body">
+              <h3 class="card-title">¡Vacaciones de verano!</h3>
+              <h6 class="card-subtitle">Vuela por Chile y Sudamérica con hasta 40% de descuento</h6>
+              <p class="card-text"><small class="text-body-primary"> Encuentra paquetes, hoteles, seguros y arriendo de autos en AroVia Express</small></p>
+              <p class="card-text"><small class="text-body-primary">Compra Aquí</small></p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <img src="img6/polynesia.jpg" class="img-fluid rounded-start h-100" alt="polynesia">
+          </div>
+        </div>
+      </div>
+    
+    <!-- formulario horizontal -->
+    <!--https://getbootstrap.com/docs/5.3/components/card/#navigation-->
+
+    <div class="card text-center">   
+            <div class="card-group" style="margin:2px; border-radius:30px; border-block-end:2px">
+                <ul class="nav border radius">
+                  <li class="nav-item"><a class="nav-link" href="#">Vuelos</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Paquetes</a></li> 
+                  <li class="nav-item"><a class="nav-link" href="#">Hoteles</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Autos</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Seguros</a></li>
+                  <li class="nav-item"></li><a class="nav-link" href="#">Upgrade</a></li>
+                </ul> 
+            </div>  
+    <div class="card-body">
+            <!-- https://getbootstrap.com/docs/5.3/components/navs-tabs/#pills-with-dropdowns -->
+            <ul class="nav nav-pills card-header-pills">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Ida y Vuelta</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Economy</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">1 pasajero</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
+              </li>
+            </ul>
+    </div>
+          <div class="card-body">
+            <div class="row g-3">
+              <div class="col-sm-6 col-lg-1">
+                <input type="text" class="form-control" placeholder="Origen" aria-label="Origen">
+              </div>
+              <div class="col-sm-6 col-lg-1">
+                <input type="text" class="form-control" placeholder="Destino" aria-label="Destino">
+              </div>
+              <div class="col">
+                <!-- https://getbootstrap.com/docs/5.3/forms/input-group/#basic-example -->
+                <span class="input-group-text">Fecha Ida</span>
+              </div>
+              <div class="col">
+                <input type="date" class="form-control" placeholder="Fecha ida" aria-label="Zip">
+              </div>
+              <div class="col">
+                <!-- https://getbootstrap.com/docs/5.3/forms/input-group/#basic-example -->
+                <span class="input-group-text">Fecha Vuelta</span>
+              </div>
+              <div class="col">
+                <input type="date" class="form-control" placeholder="Fecha vuelta" aria-label="Zip">
+              </div>
+              <div class="col">
+                <button class="btn btn-danger">Buscar</button>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>  
+    </div>
+
+    <!-- bootstrap js -->
+    <!-- 
+    Configura el proyecto de manera adecuada para utilizar Bootstrap ya sea por CDN o descarga.
+    -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
